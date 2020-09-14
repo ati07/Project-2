@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Card 3D Design</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        min-height: 100vh;
+        background: #232427;
+    }
+
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        max-width: 1200px;
+        margin: 40px, 0;
+
+
+    }
+
+    .card {
+        display: flex;
+        position: relative;
+        width: 320px;
+        height: 370px;
+        /* box-shadow: inset 5px 5px 15px rgba(0, 0, 0, 0.2),
+                    inset -5px -5px 15px rgba(255, 255, 255, 0.1),
+                    5px 5px 15px rgba(0, 0, 0, 0.3),
+                    -5px -5px 15px rgba(255, 255, 255, 0.1); */
+        box-shadow: inset 5px 5px 15px rgba(0, 0, 0, 0.2),
+            inset -5px -5px 15px rgba(255, 255, 255, 0.1),
+            5px 5px 15px rgba(0, 0, 0, 0.2),
+            -5px -5px 15px rgba(255, 255, 255, 0.1);
+        border-radius: 15px;
+        /* border: 2px solid black; */
+        margin: 30px;
+    }
+
+    h1 {
+        position: absolute;
+        top: -10px;
+        right: 90px;
+        font-size: 7rem;
+        /* display: block; */
+        color: rgba(255, 255, 255, 0.05);
+        width: 24px;
+    }
+
+    h2 {
+        color: rgb(255, 255, 255, 0.5);
+        padding: 10px;
+        font-size: 2rem;
+    }
+
+    .box {
+        position: absolute;
+        /* margin: 20px; */
+        top: 20px;
+        left: 20px;
+        right: 20px;
+        bottom: 20px;
+        background: #2a2b2f;
+        border: 2px solid #1e1f23;
+        border-radius: 15px;
+        box-shadow: 0px 20px 50px rgba(0, 0, 0, 0.5);
+        transition: 0.5s;
+        display: flex;
+        /* align-content: center; */
+        align-items: center;
+        justify-content: center;
+    }
+
+    .box:hover {
+        transform: translateY(-50px);
+        box-shadow: 0 40px 70px rgba(0, 0, 0, 0.5);
+    }
+
+    .content {
+        /* top: 10px; */
+        padding: 20px;
+        text-align: center;
+    }
+
+    p {
+        color: rgb(255, 255, 255, 0.5);
+    }
+
+    a {
+        /* padding: 20px; */
+        text-decoration: none;
+        color: rgb(255, 255, 255, 0.5);
+    }
+
+    .link {
+        margin: 10px auto;
+
+        border: 2px solid white;
+        border-radius: 10px;
+        width: 123px;
+        padding: 10px;
+        display: fles;
+        display: inline-block;
+
+    }
+
+    #first:hover {
+        background-color: rgb(7, 247, 127);
+    }
+
+    #second:hover {
+        background-color: blueviolet;
+    }
+
+    #third:hover {
+        background-color: rgb(232, 8, 240);
+    }
+</style>
+
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="box">
+                <div class="content">
+                    <h1>01</h1>
+                    <h2>Card One</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. In nesciunt iusto blanditiis? Illo
+                        nostrum
+                        ducimus iste nam libero assumenda quas, voluptatum omnis animi impedit adipisci repellendus
+                        minus
+                        dicta quos quia consectetur eos qui dignissimos!</p>
+                    <div class="link" id='first'>
+                        <a href="#">Read More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="box">
+                <div class="content">
+                    <h1>02</h1>
+                    <h2>Card Two</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. In nesciunt iusto blanditiis? Illo
+                        nostrum
+                        ducimus iste nam libero assumenda quas, voluptatum omnis animi impedit adipisci repellendus
+                        minus
+                        dicta quos quia consectetur eos qui dignissimos!</p>
+                    <div class="link" id='second'>
+                        <a href="#">Read More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="box">
+                <div class="content">
+                    <h1>03</h1>
+                    <h2>Card Three</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. In nesciunt iusto blanditiis? Illo
+                        nostrum
+                        ducimus iste nam libero assumenda quas, voluptatum omnis animi impedit adipisci repellendus
+                        minus
+                        dicta quos quia consectetur eos qui dignissimos!</p>
+                    <div class="link" id='third'>
+                        <a href="#">Read More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
